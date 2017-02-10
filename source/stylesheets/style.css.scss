@@ -1,3 +1,5 @@
+@import 'compass/css3/transition';
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -10,6 +12,9 @@
 * 	Template Style 
 *
 * ======================================================= */
+html{
+  height: 100%;
+}
 body {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
@@ -17,15 +22,15 @@ body {
   line-height: 1.7;
   color: #828282;
   background: #fff;
+  height: 100%;
 }
 
 #page {
-  position: relative;
-  overflow-x: hidden;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  height: 100%;
+  overflow-x: visible;
+  @include transition-duration(0.5s);
 }
+
 .offcanvas #page {
   overflow: hidden;
   position: absolute;
@@ -252,13 +257,10 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #02add3;
 }
 
-#home,
 #fh5co-counter,
 .fh5co-bg {
-  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  position: relative;
 }
 
 .fh5co-bg {
@@ -281,59 +283,29 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-cover {
   height: 100%;
-  background-repeat: no-repeat;
-  position: relative;
-  float: left;
   width: 100%;
-}
-.fh5co-cover .overlay {
   background-position: center right;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: contain;
   z-index: 0;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
   background-color: rgba(7, 173, 211, 1);
-}
-.fh5co-cover > .fh5co-container {
-  position: relative;
-  z-index: 10;
-}
-.fh5co-cover .display-t,
-.fh5co-cover .display-tc {
-  z-index: 9;
-  height: 100%;
-  display: table;
-  width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .fh5co-cover .display-t,
-  .fh5co-cover .display-tc {
-    height: 600px;
+  background-image: url(../images/peso-digital-stroke.svg);
+
+  .container, .container .row, .container .row > div {
+    height: 100%;
   }
-}
-.fh5co-cover.fh5co-cover-sm {
-  height: 600px;
-}
-@media screen and (max-width: 768px) {
-  .fh5co-cover.fh5co-cover-sm {
-    height: 400px;
+  .display-t, .display-tc {
+    z-index: 9;
+    height: 100%;
+    display: table;
+    width: 100%;
   }
-}
-.fh5co-cover.fh5co-cover-sm .display-t,
-.fh5co-cover.fh5co-cover-sm .display-tc {
-  height: 600px;
-  display: table;
-  width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .fh5co-cover.fh5co-cover-sm .display-t,
-  .fh5co-cover.fh5co-cover-sm .display-tc {
-    height: 400px;
+
+  @media screen and (max-width: 992px) {
+    background-size: 40%;
+    background-position-y: bottom;
+    background-position-x: 35%;
   }
 }
 
@@ -1467,7 +1439,7 @@ ysumate .form-inline .form-group .form-control {
 .fh5co-nav-toggle {
   position: fixed;
   right: 0px;
-  top: 38px;
+  top: 20px;
   z-index: 21;
   padding: 6px 0 0 0;
   display: block;
@@ -1714,9 +1686,6 @@ ysumate .form-inline .form-group .form-control {
   }
   .fh5co-cover {
     height: 100%;
-  }
-  .overlay{
-    background-image: url(../images/peso-digital-stroke.svg);
   }
   #caracteristicas{
     background-image: url(../images/peso-digital-stroke-grey.svg);

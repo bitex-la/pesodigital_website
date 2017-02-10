@@ -1,0 +1,41 @@
+!!!
+%html
+  %head
+    %meta(charset="utf-8")
+    %meta(content="IE=edge" http-equiv="X-UA-Compatible")
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    %title= current_page.data.title || "Peso Digital"
+    %meta(name="viewport" content="width=device-width, initial-scale=1")
+    %meta(name="description" content="Peso Digital. Pesos Argentinos en el Blockchain")
+    %meta(name="keywords" content="pesos, blockchain, inclusion, fintech, financiera, argentinos")
+    %meta(name="author" content="pesodigital")
+
+    %meta(property="og:title" content="Peso Digital")
+    %meta(property="og:image" content="http://www.pesodigital.info/images/fb.png")
+    %meta(property="og:url" content="http://www.pesodigital.info")
+    %meta(property="og:site_name" content="Peso Digital")
+    %meta(property="og:description" content="Pesos Argentinos en el Blockchain")
+    %meta(name="twitter:title" content="Peso Digital")
+    %meta(name="twitter:image" content="http://www.pesodigital.info/images/fb.png")
+    %meta(name="twitter:url" content="http://www.pesodigital.info")
+    %meta(name="twitter:card" content="")
+    %link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet")
+
+    = stylesheet_link_tag :site
+    <!-- Modernizr JS -->
+    = javascript_include_tag "modernizr-2.6.2.min"
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    = javascript_include_tag "respond.min.js"
+    <![endif]-->
+
+  %body
+    = yield
+    = javascript_include_tag "jquery.min"
+    = javascript_include_tag "jquery.easing.1.3"
+    = javascript_include_tag "bootstrap.min"
+    = javascript_include_tag "jquery.waypoints.min"
+    = javascript_include_tag "jquery.countTo"
+    = javascript_include_tag "jquery.stellar.min"
+    = javascript_include_tag "main"

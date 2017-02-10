@@ -259,7 +259,6 @@
 		goToTop();
 		loaderPage();
 		counterWayPoint();
-		//parallax();
 	});
 
 
