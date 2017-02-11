@@ -13,7 +13,7 @@ title: Preguntas Frecuentes | Peso Digital
             %br.visible-sm.visible-xs
             %a.btn.btn-link(href="#sector_financiero")
               Sector financiero y FinTech
-            %br.visible-sm.visible-xs
+            %br
             %a.btn.btn-link(href="#estado")
               Estado y entes reguladores
             %br.visible-sm.visible-xs
@@ -30,7 +30,7 @@ title: Preguntas Frecuentes | Peso Digital
 
 - groups.each_with_index do |tuple, group|
   - kind, title = tuple
-  %div(id=kind class="card #{'first-card' if group == 0} #{"bg-section border-bottom" if group.odd? }")
+  %div(id=kind class="card #{'first-card' if group == 0} #{"alternate-bg" if group.odd? }")
     .container.animate-box
       .row
         .col-md-8
