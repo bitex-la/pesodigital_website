@@ -1,0 +1,288 @@
+personas:
+  - q: ¿Es para mí?
+    a: Si, definitivamente. La inclusión financiera de todos es uno de los
+       objetivo principales.
+
+  - q: ¿Qué diferencia hay con el efectivo?
+    a: Para pagar es muy similar. Vos decidís cuando y a quien pagar, y una vez
+       hecho el pago es irreversible. A diferencia por ejemplo de una cuenta de
+       banco donde un tercero puede debitar de tu cuenta sin tu permiso o
+       confiscarla.
+       El efectivo no deja ningún registro, en cambio el peso digital deja un
+       registro que sirve para que demuestres tu capacidad de pago a la hora de
+       sacar un crédito. Además es más seguro, porque es resistente al daño
+       físico, al robo, pérdida y no se puede falsificar.
+
+  - q: ¿Sí el pago es irreversible, cómo se hacen devoluciones?
+    a: Como harías con el efectivo, el cobrador envía nuevamente el dinero al
+       pagador.
+
+  - q: ¿Tengo que autorizar cada pago? ¿Existe el débito automático?
+    a: Existe la posibilidad de débito automático, podés tener parte de tu
+       dinero en un balance controlado por una empresa, como un banco o una
+       billetera digital, donde ellos puedan debitar para pagar lo que haga
+       falta. El resto de tu dinero lo podés guardar vos en una cuenta
+       autogestionada y que nadie lo toque sin tu permiso.
+
+  - q: ¿Qué diferencia hay con una tarjeta de débito / crédito?
+    a: Al igual que las tarjetas, el Peso Digital es un medio electrónico.
+       A diferencia de las tarjetas funciona en una red decentralizada que no
+       se cae nunca, y se comunica por internet. Además, para el comercio es 
+       mucho más fácil barato aceptar pesos digitales, por eso incluso los
+       lugares que históricamente solo aceptan efectivo pueden empezar a
+       aceptar pesos digitales sin problemas.
+
+  - q: ¿Si el Blockchain es público, dónde está mi privacidad?
+    a: El Blockchain es público, los saldos y movimientos de cuentas son
+       visibles por todos, pero tu cuenta no está asociada a tu identidad.
+       Vos podrías, si quisieras, demostrar que sos dueño de una cuenta
+       a quien vos quieras, por ejemplo a la hora de sacar un crédito.
+       Pueden existir bases de datos privadas o estatales que asocien
+       identidades a cuentas de peso digital compulsivamente, pero vos siempre
+       podés crear nuevas cuentas para tener más control sobre la información
+       que exponés.
+
+  - q: ¿Qué pasa si pierdo el celular o se me rompe?
+    a: Los datos estan guardados en el Blockchain, eso no se pierde.
+       Lo importante en una cuenta autogestionada es hacer copia de respaldo 
+       de tu firma digital. Puede ser tan simple como imprimir la firma
+       compuesta de números y letras en un papel, cortarlo en dos, y guardar
+       cada parte en un lugar diferente.
+       Si tu cuenta de pesos digitales es gestionada en un banco o billetera
+       digital, ellos se encargan de todo esto.
+      
+  - q: ¿Me los pueden robar? ¿Cómo me protejo?
+    a: Un ladrón necesitaría hacerse con la firma digital de tu cuenta
+       autogestionada, por eso hay que guardarla de forma segura.
+       A diferencia de los robos de efectivo, los pesos digitales dejan
+       registros que permiten seguir el dinero robado y pueden ayudar a dar con
+       el ladrón.
+
+  - q: ¿Quién emite?
+    a: El organismo emisor es la Cámara de Peso Digital. No tiene política
+       monetaria, solo convierte pesos existentes de una red cualquiera a la
+       red de pesos digitales.
+       La emisión del peso argentino sigue siendo funcion del BCRA y los
+       bancos.
+
+  - q: ¿Cómo se garantiza su convertibilidad?
+    a: La Cámara respalda en un 100% los pesos digitales con pesos en cuentas
+       bancarias o LEBACS. Las tenencias en cuentas de banco y LEBACS serán
+       auditadas por auditoras tradicionales.
+       El circulante de pesos digitales es auditable públicamente e informado
+       por cada Blockchain. El total de pesos digitales tiene que ser igual al
+       total de tenencias en cuentas y LEBACS.
+      
+  - q: ¿Qué pasa si desaparece la Cámara?
+    a: Si la Cámara desaparece los pesos digitales en circulación en los
+       distintos Blockchains podrían seguir intercambiandose, pero no habría
+       nueva emisión ni destrucción de pesos digitales.
+       Si el respaldo se pierde, es posible que el valor del peso digital se
+       desplome, o al contrario, si es útil y no hay nueva emisión, es posible
+       que se aprecie con respecto a los pesos tradicionales.
+       En un escenario de rescate del BCRA o los bancos, éstos podrían
+       restituir el respaldo de los pesos digitales circulantes, y continuar
+       con la emisión de un nuevo peso digital controlado por ellos, pero
+       convertible con el anterior sin problemas.
+      
+  - q: ¿Cómo y donde abro mi cuenta? ¿Puedo tener varias?
+    a: Para cada Blockchain hay un software llamado billetera que
+       actua como tu cuenta. No necesitás pedir permiso para
+       autogestionar tu cuenta o billetera directamente en un Blockchain.
+       Los bancos y billeteras digitales pueden gestionar tu billetera por vos,
+       en ese caso perdés el control de tus fondos pero ganás en
+       conveniencia. El funcionamiento puede ser tan transparente como que tu
+       cuenta de banco actual te permita tambien recibir y efectuar
+       transferencias de pesos digitales.
+
+  - q: ¿Me puedo cambiar de cuenta?
+    a: Si, creas una nueva cuenta y envias tus fondos ahí.
+       Si guardás la firma digital de tu vieja cuenta autogestionada
+       el historial no se pierde.
+
+  - q: ¿Donde consigo pesos digitales?
+    a: En la medida que la cámara se integre con las distintas redes vas a
+       poder convertir tus pesos en una red a pesos digitales. Actualmente
+       estamos probando nuestra integración con la red bancaria.
+       <br/>
+       <a href="/plan.html#implementación">Leé más sobre el nuestro plan.</a>
+
+  - q: ¿Qué puedo pagar con pesos digitales?
+    a: Todavía no existen comercios o profesionales que acepten pesos
+       digitales en forma de pago.
+       <br/>
+       <a href="/plan.html#implementación">Leé más sobre el nuestro plan.</a>
+      
+  - q: ¿Cuanto tarda en validarse la transacción?
+    a: Depende del Blockchain que uses y el monto de la transacción, puede ser
+       instantáneo o tardar una hora. Para un café podés darte por pagado
+       inmediatamente, para vender un auto deberías esperar a que
+       la mayoría del Blockchain haya verificado el pago.
+       Si tenés una cuenta gestionada por un banco o billetera digital, puede
+       ser instantáneo para clientes del mismo proveedor, sin importar el
+       monto.
+      
+  - q: ¿Se puede caer el sistema?
+    a: Las cuentas autogestionadas corren directamente sobre el Blockchain que
+       nunca se cae, pero tu proveedor de internet puede caerse y dejarte
+       sin acceso al Blockchain.
+       El Blockchain continúa registrando las transferencias que ingresan,
+       aunque no puedas acceder a verlas. 
+       Los proveedores de cuentas de pesos digitales como bancos o billeteras
+       digitales pueden caerse.
+    
+  - q: ¿Qué opinan los reguladores? ¿Es legal?
+    a: Actualmente no hay regulacion sobre la emisión de monedas digitales.
+       Activos digitales como el Bitcoin pueden comprarse y venderse
+       libremente y no pagan IVA.
+       Por la transparencia y beneficio al público que trae el Peso Digital
+       somos muy optimistas en cuanto a su regulación favorable.
+
+  - q: ¿Cómo se incorpora a la declaración de impuestos?
+    a: Son pesos en otra caja, así como tenemos efectivo, cuentas de banco o
+       saldo en un procesador de pagos.
+
+empresas:
+  - q: ¿Qué beneficios tiene para mi negocio?
+    a: Hasta ahora identificamos que reduce el costo de cobrar en efectivo.
+       Permite cobrar en efectivo por ventas realizadas en internet. Incluso,
+       la plataforma de ecommerce puede recibir pagos a una cuenta
+       autogestionada por la empresa, sin pagar comisiones de procesamiento de
+       pagos. Una empresa con una cuenta autogestionada puede integrar
+       facilmente todos sus sistemas desde la contabilidad hasta la ejecución
+       de los pagos a proveedores, en un mismo lugar.
+
+  - q: ¿Qué riesgos tiene para mi negocio?
+    a: El principal riesgo puede estar en la mala administración de una cuenta
+       autogestionada. Una transferencia bancaria erronea o fraudulenta puede
+       revertirse hablando con el banco, en el Blockchain esto no es posible.
+       Para más seguridad la empresa puede trabajar pesos digitales a traves de
+       un banco, billetera digital o proveedor de tecnología que reduzca o
+       elimine todos estos riesgos.
+      
+  - q: ¿Qué necesita peso digital de parte de mi empresa?
+    a: Es importante que las empresas se informen sobre peso digital y
+       contribuyan con sus comentarios y críticas. Si ven un impacto positivo,
+       dimensionarlo de alguna forma que fortalezca la necesidad. Nos gustaría
+       saber cuanto ahorran en procesos actuales y que nuevos negocios pueden
+       hacer gracias al peso digital. Y último pero no menos importante,
+       necesitamos que acepten pesos digitales en forma de pago, y que estén
+       dispuestos a pagar en pesos digitales a los proveedores que tengan esa
+       opción.
+
+  - q: ¿Cómo hago para aceptar pesos digitales?
+    a: Contactanos a
+       <a href="mailto:peso-digital@googlegroups.com">
+         peso-digital@googlegroups.com
+       </a>
+       y
+       <a href="/plan.html#implementación">leé más sobre el nuestro plan.</a>
+
+sector_financiero:
+  - q: ¿Cómo afecta a las FinTech?
+    a: El peso digital le permite a las FinTech enfocarse en desarrollar su
+       servicio de valor agregado sin preocuparse por conectarse a las
+       distintas redes de transferencia de dinero.
+
+  - q: ¿Cómo afecta a las entidades crediticias?
+    a: Las cuentas autogestionadas de pesos digitales se pueden usar como una
+       muestra de capacidad de pago. La hiperconexión reduce la fricción y
+       multiplica los canales para entregar el crédito y recibir los pagos.
+       La Cámara de Peso Digital no se dedica a calificar ni otorgar crédito.
+
+  - q: ¿Cómo se integra con los procesadores de pago actuales?
+    a: Los procesadores de pagos pueden gestionar cuentas para sus empresas
+       clientes y ofrecer el procesamiento de pagos en pesos digitales junto al
+       de tarjetas de crédito, débito, etc. Pueden mostrar un saldo único de
+       pagos recibidos para cada cliente. Mezclando pesos digitales con las
+       otras formas de pago.
+
+  - q: ¿Cómo se integran los bancos, billeteras digitales y financieras?
+    a: Los bancos, billeteras y financieras pueden gestionar cuentas para sus
+       clientes. En ese caso tendrían control total de los fondos. Pueden
+       ofrecer cuentas comitentes, cajas de ahorro o cuentas corrientes que
+       indistintamente reciben y envian pesos via transferencia bancaria o en
+       la red de Peso Digital.
+       Desde el punto de vista de PLD los depósitos desde la red de peso
+       digital pueden requerir más atención que los que provienen de otro
+       banco, pero mucha menos atención que los depósitos en efectivo.
+      
+  - q: ¿Qué diferencia tiene con la cámara compensadora electrónica?
+    a: El clearing de Peso Digital es continuo y constante, y no requiere de
+       crédito entre entidades. Es además inmediatamente abierto a todas las
+       empresas del rubro financiero y las personas de forma directa.
+
+  - q: ¿Qué pasa con los acuerdos que ya hay entre redes y entidades?
+    a: "Los acuerdos existentes siguen teniendo valor: Dos entidades que confian
+       mutuamente pueden permitir a sus clientes pagar entre ellas cualquier
+       monto, instantáneamente, sin hacer clearing externo, como si se tratara
+       de un pago dentro de la misma red."
+
+  - q: ¿En que se diferencia de una billetera digital o banco con un API?
+    a: Si un banco o billetera digital quiere ser el operador y dueño de la red
+       se vuelve un único punto de falla, limita la innovación a su ritmo e
+       intereses, y los que construyen sobre esa red corren el riesgo de ser
+       víctimas de la arbitrariedad del operador.
+       Ante estos riesgos, los otros bancos terminan creando sus propias redes
+       y sus propias APIs, volviendo a atomizar el mercado. La Cámara de Peso
+       Digital no controla los Blockchains, y la funcion de puente entre redes
+       puede ser fácilmente apropiada por el estado mismo, que es en última
+       instancia el respaldo de todos los pesos argentinos.
+    
+  - q: ¿El peso digital reemplaza mi API?
+    a: No, en lo absoluto. El peso digital es un API para enviar y recibir
+       dinero entre personas y entidades, un común denominador entre todos. Los
+       APIs de cada empresa se especializan en un negocio en particular.
+       Incluso los bancos y billeteras que ofrecen cuentas gestionadas de pesos
+       digitales pueden ofrecer API's muy distintos entre si.
+
+estado:
+  - q: ¿Cual es la política monetaria? ¿Es emisión secundaria?
+    a: No hay política monetaria en si. La Cámara recibe pesos y los custodia
+       al 100%. En la práctica, para la función de la cámara no hay gran
+       diferencia entre custodiar en LEBAC's o una cuenta de banco.
+       El BCRA por su parte tiene motivos para preferir que se utilicen LEBAC.
+
+  - q: ¿La cámara de peso digital es un banco o intermediador financiero?
+    a: Definitivamente no es un banco, no invierte activamente ni presta dinero.
+       El respaldo de los pesos digitales puede generar una renta pasiva, que
+       podría usarse para cubrir costos operativos de la cámara o podría
+       distribuirse proporcionalmente entre todas las cuentas de pesos
+       digitales en todos los Blockchains.
+
+  - q: ¿Cómo tributan las operaciones en pesos digitales?
+    a: El peso digital funciona como una forma de pago, y las operaciones
+       tributan normalmente. La información que ofrece al fisco no está
+       asociada a identidades como las cuentas bancarias, pero provee montos,
+       fechas y cuentas, lo que lo hace más transparente que el efectivo.
+       Una factura electrónica podría vincularse a una transacción de peso
+       digital, certificando que la operación ocurrió realmente e identificado
+       al contribuyente y sus clientes.
+      
+  - q: ¿Cómo se previene el lavado de dinero y financiamiento del terrorismo?
+    a: Los sujetos obligados por UIF continuan con sus responsabilidades,
+       observando las operaciones en pesos digitales como si se tratara de
+       dinero en efectivo. A diferencia del efectivo se puede reconstruir el
+       circuito del dinero, analizar montos y movimientos recurrentes entre
+       cuentas. Con el uso se vuelve una herramienta más poderosa y
+       transparente que el sistema bancario, como ocurrió en la red Bitcoin
+       desde la aparición de empresas como Elliptic. En Argentina UIF podría
+       encargarse de la construcción y mantenimiento de una base de datos que
+       vincule personas con cuentas en el Blockchain. De este modo se
+       lograrían los objetivos del organismo sin perjudicar la inclusión
+       financiera y la competitividad.
+      
+  - q: ¿Con que iniciativas y programas del estado se alinea?
+    a: El Peso Digital contribuiría a la inclusión financiera, porque se baja
+       la barrera de entrada a los prestadores de servicio, aumenta la
+       competencia, y se vuelve económicamente viable dar servicio a las
+       personas de bajos recursos. El Peso Digital disminuiría la demanda por
+       efectívo físico al ofrecer a las personas apertura, privacidad,
+       accesibilidad, control y seguridad, sin los riesgos de robo, pérdida,
+       destrucción o falsificación.
+       La modernización y transparencia de la administracion pública se vería
+       beneficiada. Con solo declarar sus cuentas y las de cada repartición,
+       cualquier ciuadadano podría auditar los flujos de dinero completos,
+       desde la recaudación de impuestos hasta los pagos a empleados, pagos a
+       proveedores, asignaciones y pensiones.
+
