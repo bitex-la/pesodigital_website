@@ -27,13 +27,13 @@
 	var mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
-	    var container = $("#fh5co-offcanvas, .js-fh5co-nav-toggle");
+	    var container = $("#offcanvas, .js-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 
 	    	if ( $('body').hasClass('offcanvas') ) {
 
     			$('body').removeClass('offcanvas');
-    			$('.js-fh5co-nav-toggle').removeClass('active');
+    			$('.js-nav-toggle').removeClass('active');
 				
 	    	}
 	    
@@ -48,19 +48,19 @@
 
 		if ( $(window).scrollTop() > 50)  {
 			$('body').addClass('scrolled');
-			$('.js-fh5co-nav-toggle').removeClass('fh5co-nav-white');
+			$('.js-nav-toggle').removeClass('nav-white');
 		} else {
 			$('body').removeClass('scrolled');
-			$('.js-fh5co-nav-toggle').addClass('fh5co-nav-white');
+			$('.js-nav-toggle').addClass('nav-white');
 		}
 
 		$(window).scroll(function(){
 			if ( $(window).scrollTop() > 50)  {
 				$('body').addClass('scrolled');
-				$('.js-fh5co-nav-toggle').removeClass('fh5co-nav-white');
+				$('.js-nav-toggle').removeClass('nav-white');
 			} else {
 				$('body').removeClass('scrolled');
-				$('.js-fh5co-nav-toggle').addClass('fh5co-nav-white');
+				$('.js-nav-toggle').addClass('nav-white');
 			}
 		});
 
@@ -69,15 +69,15 @@
 
 	var offcanvasMenu = function() {
 
-		$('#page').prepend('<div id="fh5co-offcanvas" />');
-		$('#page').prepend('<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>');
+		$('#page').prepend('<div id="offcanvas" />');
+		$('#page').prepend('<a href="#" class="js-nav-toggle nav-toggle nav-white"><i></i></a>');
 		var clone1 = $('.menu-1 > ul').clone();
-		$('#fh5co-offcanvas').append(clone1);
+		$('#offcanvas').append(clone1);
 		var clone2 = $('.menu-2 > ul').clone();
-		$('#fh5co-offcanvas').append(clone2);
+		$('#offcanvas').append(clone2);
 
-		$('#fh5co-offcanvas .has-dropdown').addClass('offcanvas-has-dropdown');
-		$('#fh5co-offcanvas')
+		$('#offcanvas .has-dropdown').addClass('offcanvas-has-dropdown');
+		$('#offcanvas')
 			.find('li')
 			.removeClass('has-dropdown');
 
@@ -104,7 +104,7 @@
 			if ( $('body').hasClass('offcanvas') ) {
 
     			$('body').removeClass('offcanvas');
-    			$('.js-fh5co-nav-toggle').removeClass('active');
+    			$('.js-nav-toggle').removeClass('active');
 				
 	    	}
 		});
@@ -113,7 +113,7 @@
 
 	var burgerMenu = function() {
 
-		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
+		$('body').on('click', '.js-nav-toggle', function(event){
 			var $this = $(this);
 
 
@@ -218,7 +218,7 @@
 
 	// Loading page
 	var loaderPage = function() {
-		$(".fh5co-loader").fadeOut("slow");
+		$(".loader").fadeOut("slow");
 	};
 
 	var counter = function() {
@@ -230,8 +230,8 @@
 	};
 
 	var counterWayPoint = function() {
-		if ($('#fh5co-counter').length > 0 ) {
-			$('#fh5co-counter').waypoint( function( direction ) {
+		if ($('#counter').length > 0 ) {
+			$('#counter').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 					setTimeout( counter , 400);					

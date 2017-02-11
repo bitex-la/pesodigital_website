@@ -1,0 +1,137 @@
+---
+title: El Plan | Peso Digital
+---
+#home.cover-card
+  .container
+    .row
+      .col-md-7
+        .display-t
+          .display-tc.animate-box(data-animate-effect="fadeInUp")
+            %h1 De cero a Peso Digital
+            %p
+              %a.btn.btn-link(href="/plan.html#difusion") Difusión
+              %a.btn.btn-link(href="/plan.html#comunidad") Comunidad
+            %p
+              %a.btn.btn-link(href="/plan.html#adopcion") Adopción
+              %a.btn.btn-link(href="/plan.html#implementacion") Implementacion
+  .overlay
+
+#difusion.card
+  .container
+    .row.row-pb-md
+      .col-md-8.animate-box
+        %h1 Difusión
+        %p
+          Queremos contarle la idea a empresas y personas para recibir
+          sugerencias y críticas. Idealmente nos pueden ayudar a
+          dimensionar el impacto tangible:
+          %br
+          %em.text-disabled "Me ahorraría 400.000.000 al año".
+        %p
+          Este sitio es la principal herramienta de difusión.
+          Podés hacer sugerencias y proponer correciones
+          %a(href="https://github.com/bitex-la/pesodigital_website/issues")
+            creando un "issue" en la plataforma GitHub,
+        
+
+#comunidad.card.bg-section.border-bottom
+  .container
+    .row.row-pb-md
+      .col-md-8.animate-box(data-animate-effect="fadeInUp")
+        %h1 Comunidad
+        %p
+          Peso digital es atractivo para todo tipo de gente,
+          dispuesta a colaborar para hacerlo realidad.
+          Tenemos una lista de correo para hacer brainstorming,
+          responder preguntas, comentar novedades y coordinar reuniones.
+          Suscribirte escribiendo a
+          %a(href="mailto:peso-digital+subscribe@googlegroups.com")
+            peso-digital+subscribe@googlegroups.com.
+
+#adopcion.card
+  .container
+    .row.animate-box.row-pb-md
+      .col-md-8.animate-box
+        %h1 Adopción
+        - data.adopcion.each do |a|
+          %p= a
+
+#implementacion.card.bg-section.border-bottom
+  .container
+    .row.row-pb-md
+      .col-md-8.animate-box(data-animate-effect="fadeInUp")
+        %h1 Implementación
+        %p
+          El objetivo de la primera prueba es practicar el rol de Cámara
+          de Peso Digital y delinear los requisitos para la emisión y uso
+          de los en los distintos blockchains.
+
+        %p 
+          La camara emite pesos digitales en el blockchain de Bitcoin
+          utilizando el protocolo Open Assets.
+
+        %p 
+          El activo emitido
+          %a(href="https://www.coinprism.info/asset/AHs7umECsaB3mnCFErno9D5Uzf8RnPk7iJ")
+            puede verse aquí.
+        
+          Para recibirlos solo necesitas crear una 
+          %a(href="https://www.coinprism.info/wallet")
+            billetera en CoinPrism.
+  
+        %p
+          Para enviar los Pesos Digitales que tengas vas a necesitar
+          tener bitcoins para pagarle al Blockchain por procesar
+          tu transferencia.
+
+        %p
+          La cámara conecta la red bancaria con la de Peso Digital utilizando
+          una cuenta bancaria propia.
+
+        %p
+          Para entrar a la red de Peso Digital haces una transferencia
+          bancaria a la cuenta de la Cámara, y además indicas tu dirección
+          de Peso Digital como aparece en la billetera.
+          
+        %p
+          La cámara emite nuevos pesos digitales y los envía a tu dirección.
+          Los pesos bancarizados que enviaste quedan quietos como respaldo
+          de la nueva emisión.
+
+        %p
+          También podes entrar a la red "comprando" pesos digitales a
+          alguien que ya tenga. En ese caso no hay participacion de la cámara.
+  
+        %p
+          Para salir de la red y volver al sistema bancario envias pesos
+          digitales a una dirección especial de la cámara e indicás los
+          datos de tu cuenta bancaria.
+
+        %p
+          La cámara destruye los pesos digitales que devolviste, y te hace
+          una transferencia bancaria por ese monto.
+
+        %p
+          También podés salir de la red "vendiendo" pesos digitales a
+          alguien que los quiera, sin participacion de la cámara.
+
+        %p
+          Para evitar la responsabilidad en temas impositivos y regulatorios,
+          durante esta prueba la cámara no emite más de 500 pesos digitales por
+          mes por persona, y también puede negarse a emitir.
+
+        %p
+          Los datos de cuenta y dirección para entrar y salir se pueden pedir
+          %a(href="mailto:peso-digital@googlegroups.com")
+            en la lista de correo.
+
+#footer
+  .container
+    .row.animate-box
+      .col-md-8.col-md-offset-2.text-center.heading
+        %h2 Peso Digital
+        %p
+          %a.btn.btn-primary(href="mailto:peso-digital@googlegroups.com") Sumate
+.gototop.js-top
+  %a.js-gotop(href="#")
+    %i.icon-arrow-up

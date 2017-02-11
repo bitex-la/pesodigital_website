@@ -31,7 +31,29 @@
     <![endif]-->
 
   %body
-    = yield
+    .loader
+    #page
+      %nav.nav(role='navigation')
+        .container
+          .row
+            .col-xs-8.col-md-4.text-left
+              #logo 
+                %a(href="/") Peso Digital<span>.</span>
+            .col-xs-8.text-right.menu-1
+              %ul
+                :ruby
+                  urls = {
+                    "/" => "Introducción",
+                    "/plan.html" => "El Plan",
+                    "/preguntas_frecuentes.html" => "Preguntas Frecuentes"
+                  }
+                - urls.each do |url, label|
+                  %li{class: ("active" if url == current_page.url)}
+                    %a{href: url}= label
+                %li
+                  %a.btn.btn-primary(href="/") Sumate
+
+      = yield
     = javascript_include_tag "jquery.min"
     = javascript_include_tag "jquery.easing.1.3"
     = javascript_include_tag "bootstrap.min"
