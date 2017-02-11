@@ -1,3 +1,9 @@
+:ruby
+  urls = {
+    "/" => "Introducción",
+    "/plan.html" => "El Plan",
+    "/preguntas_frecuentes.html" => "Preguntas Frecuentes"
+  }
 !!!
 %html
   %head
@@ -39,25 +45,32 @@
             .col-xs-8.col-md-4.text-left
               #logo 
                 %a(href="/") Peso Digital<span>.</span>
-            .col-xs-8.text-right.menu-1
+            .col-xs-8.text-right.menu
               %ul
-                :ruby
-                  urls = {
-                    "/" => "Introducción",
-                    "/plan.html" => "El Plan",
-                    "/preguntas_frecuentes.html" => "Preguntas Frecuentes"
-                  }
                 - urls.each do |url, label|
                   %li{class: ("active" if url == current_page.url)}
                     %a{href: url}= label
                 %li
-                  %a.btn.btn-primary(href="/") Sumate
+                  %a.btn.btn-primary(href="mailto:peso-digital@googlegroups.com")
+                    Sumate
 
       = yield
+      .footer
+        .container.animate-box
+          .row
+            .col-md-8.col-md-offset-2.text-center
+              %h2 Peso Digital
+              - urls.each do |url, label|
+                - if url != current_page.url
+                  %a.btn.btn-default{href: url}= label
+              %a.btn.btn-primary(href="mailto:peso-digital@googlegroups.com") 
+                Sumate
+      .gototop.js-top
+        %a.js-gotop(href="#")
+          %i.icon-arrow-up
     = javascript_include_tag "jquery.min"
     = javascript_include_tag "jquery.easing.1.3"
     = javascript_include_tag "bootstrap.min"
     = javascript_include_tag "jquery.waypoints.min"
     = javascript_include_tag "jquery.countTo"
-    = javascript_include_tag "jquery.stellar.min"
     = javascript_include_tag "main"

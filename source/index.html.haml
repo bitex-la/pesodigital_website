@@ -1,43 +1,41 @@
-#home.cover-card
-  .container
+.cover-card
+  .container.animate-box
     .row
       .col-md-7
         .display-t
-          .display-tc.animate-box(data-animate-effect="fadeInUp")
+          .display-tc
             %h1 Pesos Argentinos en una Red Abierta
-            %p
-              %a.btn.btn-link(href="/#motivacion") Motivacion
-              %a.btn.btn-link(href="/#funcionamiento") Funcionamiento
-              %a.btn.btn-link(href="/#testimonios") Testimonios
-  .overlay
+            %a.btn.btn-link(href="#motivacion") Motivacion
+            %br.visible-sm.visible-xs
+            %a.btn.btn-link(href="#funcionamiento") Funcionamiento
+            %br.visible-sm.visible-xs
+            %a.btn.btn-link(href="#testimonios") Testimonios
 
-#motivacion.card
-  .container
-    .row.row-pb-md
-      .col-md-8.animate-box
+#motivacion.card.first-card
+  .container.animate-box
+    .row
+      .col-md-8
         %h1 Motivación
         - data.motivacion.each do |m|
           %p= m 
 
-#funcionamiento.card.bg-section.border-bottom
-  .container
-    .row.row-pb-md
-      .col-md-8.animate-box(data-animate-effect="fadeInUp")
+#funcionamiento.card.alternate-bg
+  .container.animate-box
+    .row
+      .col-md-8
         %h1 Funcionamiento
         - data.funcionamiento.each do |m|
           %p= m
 
-#adhesiones.card
-  .container
-    .row.animate-box.row-pb-md
-      %h1 Testimonios
-      %h2 Personas y empresas que apoyan el proyecto de Peso Digital.
+#testimonios.card
+  .container.animate-box
+    %h1 Testimonios
     - data.testimonios.each_slice(2).each_with_index do |pair, i| 
       .row
         - pair.each_with_index do |t, j|
-          - selected = (i.even? && j.even?) || (i.odd? && j.odd?)
-          .col-md-6.animate-box
-            %div(class="testimonial #{"selected" if selected}")
+          - alt = (i.even? && j.even?) || (i.odd? && j.odd?)
+          .col-md-6
+            %div(class="testimonial #{"alternate" if alt}")
               %blockquote
                 %p &ldquo;#{ t.text }&rdquo;
                 %p.author
@@ -45,13 +43,3 @@
                     %img{src: t.image }
                     %cite &mdash;#{ t.author }
 
-#footer
-  .container
-    .row.animate-box
-      .col-md-8.col-md-offset-2.text-center.heading
-        %h2 Peso Digital
-        %p
-          %a.btn.btn-primary(href="mailto:peso-digital@googlegroups.com") Sumate
-.gototop.js-top
-  %a.js-gotop(href="#")
-    %i.icon-arrow-up

@@ -1,0 +1,41 @@
+---
+title: Preguntas Frecuentes | Peso Digital
+---
+.cover-card
+  .container.animate-box
+    .row
+      .col-md-7
+        .display-t
+          .display-tc(data-animate-effect="fadeInUp")
+            %h1 Preguntas Frecuentes de todas partes.
+            %a.btn.btn-link(href="#personas")
+              Personas
+            %br.visible-sm.visible-xs
+            %a.btn.btn-link(href="#sector_financiero")
+              Sector financiero y FinTech
+            %br.visible-sm.visible-xs
+            %a.btn.btn-link(href="#estado")
+              Estado y entes reguladores
+            %br.visible-sm.visible-xs
+            %a.btn.btn-link(href="#empresas")
+              Empresas
+
+:ruby
+  groups = {
+    personas: 'Preguntan las Personas',
+    sector_financiero: 'Pregunta el sector financiero y FinTech',
+    estado: 'Pregunta el Estado',
+    empresas: 'Preguntan las Empresas',
+  }
+
+- groups.each_with_index do |tuple, group|
+  - kind, title = tuple
+  %div(id=kind class="card #{'first-card' if group == 0} #{"bg-section border-bottom" if group.odd? }")
+    .container.animate-box
+      .row
+        .col-md-8
+          %h1= title
+          - data.preguntas_frecuentes[kind].each do |p|
+            %h2= p.q
+            %p.answer= p.a
+

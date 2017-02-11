@@ -1,0 +1,233 @@
+@import 'compass/css3';
+
+.nav {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding: 25px 0;
+  z-index: 1001;
+  background: transparent;
+  @include transition-duration(0.5s);
+
+  @media screen and (max-width: 768px) { padding: 25px 0; }
+
+  #logo {
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    @media screen and (max-width: 768px) { margin-bottom: 0; }
+
+    a > span { color: #ffc933; }
+  }
+
+  a {
+    padding: 5px 10px 5px 0;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 992px) {
+    .menu { display: none; }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: inline;
+
+      &.active{
+        a{ color: white; }
+      }
+
+      a {
+        font-size: 16px;
+        padding: 10px 10px;
+        color: rgba(255, 255, 255, 0.5);
+        @include transition-duration(0.5s);
+
+        &:hover, &:focus, &:active { color: white; }
+      }
+    }
+  }
+}
+
+.nav-toggle {
+  position: fixed;
+  right: 0px;
+  z-index: 21;
+  display: block;
+  margin: 0 auto;
+  display: none;
+  height: 44px;
+  width: 44px;
+  z-index: 2001;
+  border-bottom: none !important;
+  cursor: pointer;
+
+  @media screen and (max-width: 992px) { display: block; }
+
+  &:hover, &:focus, &:active {
+    outline: none;
+    border-bottom: none !important;
+  }
+
+  &:hover i{
+    &::before { top: -10px; }
+    &::after { bottom: -10px; }
+  }
+
+  &.nav-white > i{
+    color: #fff;
+    background: #fff;
+    &::before, &::after { background: #fff; }
+  }
+
+  &.active {
+    i { background: transparent; }
+
+    &::before, &::after { background: #444; }
+
+    i::before {
+      top: 0;
+      @include transform(rotateZ(45deg));
+    }
+
+    i::after {
+      bottom: 0;
+      @include transform(rotateZ(-45deg));
+    }
+  }
+
+  i {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    color: #252525;
+    font: bold 14px/.4 Helvetica;
+    text-transform: uppercase;
+    text-indent: -55px;
+    background: #252525;
+    transition: all .2s ease-out;
+
+    &::before, &::after {
+      content: '';
+      width: 25px;
+      height: 2px;
+      background: #252525;
+      position: absolute;
+      left: 0;
+      transition: all .2s ease-out;
+    }
+
+    &::before { top: -7px; }
+
+    &::after { bottom: -7px; }
+  }
+}
+
+.scrolled {
+  .nav {
+    background: #fff;
+    padding: 10px 0;
+    @include box-shadow(0px 5px 7px -7px rgba(0, 0, 0, 0.15));
+    a { color: #000; }
+    a.btn { color: white; }
+
+    ul li {
+      a:hover, a:focus, a:active { color: #02add3 !important; }
+      &.active a { color: #02add3; }
+    }
+  }
+
+  .nav-toggle{ margin-top: -5px; }
+}
+
+#offcanvas {
+  position: fixed;
+  display: none;
+  z-index: 1901;
+  width: 10em;
+  top: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 1em;
+  overflow-y: auto;
+  background-color: rgba(7, 173, 211, 1);
+  @include transform(translateX(500px));
+  @include transition-duration(0.5s);
+
+  @media screen and (max-width: 768px) { display: block; }
+
+  a {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.6em;
+    &:hover { color: rgba(255, 255, 255, 0.8); }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      &.active a{ color: white; }
+    }
+
+    .btn{
+      margin-top: 20px;
+      color: white;
+    }
+  }
+}
+
+body.offcanvas #offcanvas { @include transform(translateX(0px)); }
+
+.gototop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  @include transition-duration(0.5s);
+
+  &.active{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  a {
+    width: 50px;
+    height: 50px;
+    display: table;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    @include border-radius(25px);
+
+    &:hover, &:active, &:focus {
+      text-decoration: none;
+      outline: none;
+    }
+
+    i {
+      height: 50px;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}

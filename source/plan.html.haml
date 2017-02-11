@@ -1,25 +1,25 @@
 ---
 title: El Plan | Peso Digital
 ---
-#home.cover-card
-  .container
+.cover-card
+  .container.animate-box
     .row
       .col-md-7
         .display-t
-          .display-tc.animate-box(data-animate-effect="fadeInUp")
+          .display-tc
             %h1 De cero a Peso Digital
-            %p
-              %a.btn.btn-link(href="/plan.html#difusion") Difusión
-              %a.btn.btn-link(href="/plan.html#comunidad") Comunidad
-            %p
-              %a.btn.btn-link(href="/plan.html#adopcion") Adopción
-              %a.btn.btn-link(href="/plan.html#implementacion") Implementacion
-  .overlay
+            %a.btn.btn-link(href="/plan.html#difusion") Difusión
+            %br.visible-sm.visible-xs
+            %a.btn.btn-link(href="/plan.html#comunidad") Comunidad
+            %br.visible-sm.visible-xs
+            %a.btn.btn-link(href="/plan.html#adopcion") Adopción
+            %br.visible-sm.visible-xs
+            %a.btn.btn-link(href="/plan.html#implementacion") Implementacion
 
-#difusion.card
-  .container
-    .row.row-pb-md
-      .col-md-8.animate-box
+#difusion.card.first-card
+  .container.animate-box
+    .row
+      .col-md-8
         %h1 Difusión
         %p
           Queremos contarle la idea a empresas y personas para recibir
@@ -34,10 +34,10 @@ title: El Plan | Peso Digital
             creando un "issue" en la plataforma GitHub,
         
 
-#comunidad.card.bg-section.border-bottom
-  .container
-    .row.row-pb-md
-      .col-md-8.animate-box(data-animate-effect="fadeInUp")
+#comunidad.card.alternate-bg
+  .container.animate-box
+    .row
+      .col-md-8
         %h1 Comunidad
         %p
           Peso digital es atractivo para todo tipo de gente,
@@ -49,17 +49,17 @@ title: El Plan | Peso Digital
             peso-digital+subscribe@googlegroups.com.
 
 #adopcion.card
-  .container
-    .row.animate-box.row-pb-md
-      .col-md-8.animate-box
+  .container.animate-box
+    .row
+      .col-md-8
         %h1 Adopción
         - data.adopcion.each do |a|
           %p= a
 
-#implementacion.card.bg-section.border-bottom
-  .container
-    .row.row-pb-md
-      .col-md-8.animate-box(data-animate-effect="fadeInUp")
+#implementacion.card.alternate-bg
+  .container.animate-box
+    .row
+      .col-md-8
         %h1 Implementación
         %p
           El objetivo de la primera prueba es practicar el rol de Cámara
@@ -82,7 +82,8 @@ title: El Plan | Peso Digital
         %p
           Para enviar los Pesos Digitales que tengas vas a necesitar
           tener bitcoins para pagarle al Blockchain por procesar
-          tu transferencia.
+          tu transferencia. Estamos trabajando en que puedas pagarle
+          al Blockchain en Pesos Digitales en vez de Bitcoin.
 
         %p
           La cámara conecta la red bancaria con la de Peso Digital utilizando
@@ -124,14 +125,3 @@ title: El Plan | Peso Digital
           Los datos de cuenta y dirección para entrar y salir se pueden pedir
           %a(href="mailto:peso-digital@googlegroups.com")
             en la lista de correo.
-
-#footer
-  .container
-    .row.animate-box
-      .col-md-8.col-md-offset-2.text-center.heading
-        %h2 Peso Digital
-        %p
-          %a.btn.btn-primary(href="mailto:peso-digital@googlegroups.com") Sumate
-.gototop.js-top
-  %a.js-gotop(href="#")
-    %i.icon-arrow-up
