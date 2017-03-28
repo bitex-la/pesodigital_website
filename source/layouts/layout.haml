@@ -51,7 +51,11 @@
                   %li{class: ("active" if url == current_page.url)}
                     %a{href: url}= label
                 %li
-                  %a.btn.btn-primary(href="mailto:peso-digital@googlegroups.com")
+                  %a.btn.btn-info(href="mailto:peso-digital@googlegroups.com")
+                    %i.fa.fa-envelope-o
+                %li
+                  %a.btn.btn-primary(href="https://twitter.com/intent/follow?screen_name=peso_digital" target="_blank")
+                    %i.fa.fa-twitter
                     Sumate
 
       = yield
@@ -63,7 +67,10 @@
               - urls.each do |url, label|
                 - if url != current_page.url
                   %a.btn.btn-default{href: url}= label
-              %a.btn.btn-primary(href="mailto:peso-digital@googlegroups.com") 
+              %a.btn.btn-info(href="mailto:peso-digital@googlegroups.com") 
+                %i.fa.fa-envelope-o
+              %a.btn.btn-primary(href="https://twitter.com/intent/follow?screen_name=peso_digital" target="_blank")
+                %i.fa.fa-twitter
                 Sumate
       .gototop.js-top
         %a.js-gotop(href="#")
