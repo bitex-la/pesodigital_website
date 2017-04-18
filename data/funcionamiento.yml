@@ -12,7 +12,7 @@
 
 - Un Blockchain almacena el saldo de cada cuenta de pesos digitales, también valida y registra los movimientos entre cuentas.
 
-- Además verifica que las transferencias tengan la firma digital del titular de la cuenta de origen, y que tambien tenga el dinero suficiente.
+- Además verifica que las transferencias tengan la firma digital del titular de la cuenta de origen, y que también tenga el dinero suficiente.
 
 - El Blockchain se encarga de que los registros estén replicados en copias múltiples, de forma descentralizada, siempre disponibles, y garantiza que sean inalterables.
 
@@ -26,5 +26,5 @@
 
 - De hacer falta la Cámara también convierte pesos digitales de un Blockchain a otro.
 
-- Es un sistema inconcluso, solo resuelve la hiperconexión financiera de personas y empresas. Los sistemas de crédito, los régimenes impositivos y regulaciones pueden abordarse externamente.
+- Es un sistema inconcluso, solo resuelve la hiperconexión financiera de personas y empresas. Los sistemas de crédito, los regímenes impositivos y regulaciones pueden abordarse externamente.
 
