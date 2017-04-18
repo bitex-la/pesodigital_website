@@ -28,7 +28,7 @@ personas:
     a: Al igual que las tarjetas, el Peso Digital es un medio electrónico.
        A diferencia de las tarjetas funciona en una red decentralizada que no
        se cae nunca, y se comunica por internet. Además, para el comercio es 
-       mucho más fácil barato aceptar pesos digitales, por eso incluso los
+       mucho más fácil y barato aceptar pesos digitales, por eso incluso los
        lugares que históricamente solo aceptan efectivo pueden empezar a
        aceptar pesos digitales sin problemas.
 
@@ -67,11 +67,11 @@ personas:
 
   - q: ¿Cómo se garantiza su convertibilidad?
     a: La Cámara respalda en un 100% los pesos digitales con pesos en cuentas
-       bancarias o LEBACS. Las tenencias en cuentas de banco y LEBACS serán
+       bancarias o LEBAC. Las tenencias en cuentas de banco y LEBAC serán
        auditadas por auditoras tradicionales.
        El circulante de pesos digitales es auditable públicamente e informado
        por cada Blockchain. El total de pesos digitales tiene que ser igual al
-       total de tenencias en cuentas y LEBACS.
+       total de tenencias en cuentas y LEBAC.
       
   - q: ¿Qué pasa si desaparece la Cámara?
     a: Si la Cámara desaparece los pesos digitales en circulación en los
@@ -101,7 +101,7 @@ personas:
        el historial no se pierde.
 
   - q: ¿Donde consigo pesos digitales?
-    a: En la medida que la cámara se integre con las distintas redes vas a
+    a: En la medida que la Cámara se integre con las distintas redes vas a
        poder convertir tus pesos en una red a pesos digitales. Actualmente
        estamos probando nuestra integración con la red bancaria.
        <br/>
@@ -154,7 +154,7 @@ empresas:
 
   - q: ¿Qué riesgos tiene para mi negocio?
     a: El principal riesgo puede estar en la mala administración de una cuenta
-       autogestionada. Una transferencia bancaria erronea o fraudulenta puede
+       autogestionada. Una transferencia bancaria errónea o fraudulenta puede
        revertirse hablando con el banco, en el Blockchain esto no es posible.
        Para más seguridad la empresa puede trabajar pesos digitales a traves de
        un banco, billetera digital o proveedor de tecnología que reduzca o
@@ -227,7 +227,7 @@ sector_financiero:
        Ante estos riesgos, los otros bancos terminan creando sus propias redes
        y sus propias APIs, volviendo a atomizar el mercado. La Cámara de Peso
        Digital no controla los Blockchains, y la función de puente entre redes
-       puede ser fácilmente apropiada por el estado mismo, que es en última
+       puede ser fácilmente apropiada por el Estado mismo, que es en última
        instancia el respaldo de todos los pesos argentinos.
     
   - q: ¿El peso digital reemplaza mi API?
@@ -240,14 +240,14 @@ sector_financiero:
 estado:
   - q: ¿Cual es la política monetaria? ¿Es emisión secundaria?
     a: No hay política monetaria en si. La Cámara recibe pesos y los custodia
-       al 100%. En la práctica, para la función de la cámara no hay gran
-       diferencia entre custodiar en LEBAC's o una cuenta de banco.
+       al 100%. En la práctica, para la función de la Cámara no hay gran
+       diferencia entre custodiar en LEBAC o una cuenta de banco.
        El BCRA por su parte tiene motivos para preferir que se utilicen LEBAC.
 
   - q: ¿La Cámara de Peso Digital hace intermediación financiera?
     a: Definitivamente no es un banco, no invierte activamente ni presta dinero.
        El respaldo de los pesos digitales puede generar una renta pasiva, que
-       podría usarse para cubrir costos operativos de la cámara o podría
+       podría usarse para cubrir costos operativos de la Cámara o podría
        distribuirse proporcionalmente entre todas las cuentas de pesos
        digitales en todos los Blockchains.
 
@@ -274,7 +274,7 @@ estado:
        este modo se lograrían los objetivos del organismo sin perjudicar la
        inclusión financiera y la competitividad.
       
-  - q: ¿Con que iniciativas y programas del estado se alinea?
+  - q: ¿Con que iniciativas y programas del Estado se alinea?
     a: El Peso Digital contribuiría a la <strong>inclusión financiera</strong>,
        porque se baja la barrera de entrada a los prestadores de servicio,
        aumenta la competencia, y se vuelve económicamente viable dar servicio
